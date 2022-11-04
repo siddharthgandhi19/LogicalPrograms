@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learning;
+using System;
 namespace LogicalProblem
 
 {
@@ -10,8 +11,8 @@ namespace LogicalProblem
             while (flag)
             {
                 Console.WriteLine("Welcome to Logical Programming Problems");
-                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Check Perfect Number" + "\n" + "3. PrimeNumber" + "\n" + "4. Reverse enter" + "\n" + "5. Coupon Number" + "\n" + "6. Temperature Conversion" + "\n" + "7. Exit");
-                    
+                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Check Perfect Number" + "\n" + "3. PrimeNumber" + "\n" + "4. Reverse enter" + "\n" + "5. Coupon Number" + "\n" + "6. Temperature Conversion" + "\n" + "7. Day of Week" + "\n" + "8. Exit");
+
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -27,7 +28,7 @@ namespace LogicalProblem
                         PrimeNumber pri = new PrimeNumber();
                         pri.CheckPrime(10);
                         break;
-                   case 4:
+                    case 4:
                         Reverse rev = new Reverse();
                         rev.rnum(25);
                         break;
@@ -38,6 +39,10 @@ namespace LogicalProblem
                         Temperature tem = new Temperature();
                         tem.temp1();
                         break;
+                    case 7:
+                        Day we = new Day();
+                        we.Dat();
+                        break;
                     default:
                         flag = false;
                         break;
@@ -47,4 +52,3 @@ namespace LogicalProblem
     }
 }
 
- 
